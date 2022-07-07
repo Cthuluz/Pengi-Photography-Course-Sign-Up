@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <div>
+    <body>
+      <header>
+        <h1 id="title">Pengi Photography Course</h1>
+        <p id="description">Have you wanted to join a photography course that travels the world?</p>
+      </header>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Full Name:
+          </label>
+          <input id="name" type="text" name="name" required placeholder="First and last" />
+        </fieldset>
+        <fieldset>
+          <label id="email-label">Email:
+          </label>
+          <input id="email" type="email" name="email" required placeholder="pengi@gmail.com" />
+        </fieldset>
+        <fieldset>
+          <label id="number-label">How many years of experience do you have with photography?
+          </label>
+          <input id="number" type="number" name="years" required min="0" max="120" placeholder="0" />
+        </fieldset>
+        <fieldset>
+          <label>Which course would you like to sign up for?
+          </label>
+            <select id="dropdown" name="course" >
+              <option value="">(Choose course)
+              </option>
+              <option value="1">Tropical Tasmania
+              </option>
+              <option value="2">Peaks in Patagonia
+              </option>
+              <option value="3">Jasmine of Japan
+              </option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Do you need to rent a camera?
+          </label>
+          <label><input id="hasCamera" type="radio" name="camera" value="4" class="inline" />Yes
+          </label>
+          <label><input id="noCamera" type="radio" name="camera" value="5" class="inline" />No
+          </label>
+        </fieldset>
+        <fieldset>
+          <label class="fullLine">What would you like to focus on? </label>
+          <label class="fullLine">
+            <input id="wide" type="checkbox" name="wide" value="6" class="inline" />Wide angle landscapes
+          </label>
+          <label class="fullLine"><input id="macro" type="checkbox" name="macro" value="7" class="inline" />Macro lens close ups
+          </label>
+          <label class="fullLine"><input id="people" type="checkbox" name="people" value="8" class="inline" />Portraits
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>Additional comments or accommodations:
+          </label>
+            <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Please type here anything you need our team to know prior to the course."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="submit" />
+      </form>
+    </body>
+  </div>
+</html>
